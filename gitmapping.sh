@@ -3,9 +3,9 @@ git filter-branch --commit-filter '
         then
                 GIT_AUTHOR_NAME=KritpalDhindhsa;
                 GIT_AUTHOR_EMAIL=kritpal.singh@gmail.com;
-        elif [ "$GIT_AUTHOR_NAME" = chitresh ];
+        elif [ "$GIT_AUTHOR_NAME" = krit.singh ];
         then
-                GIT_AUTHOR_NAME=chitreshsinha;
-                GIT_AUTHOR_EMAIL=chitresh.sinha@securifi.com;
+                GIT_AUTHOR_NAME=kritpalDhindhsa;
+                GIT_AUTHOR_EMAIL=kritpal.singh@securifi.com;
         fi;
-       '
+      git commit-tree "$@"' master
